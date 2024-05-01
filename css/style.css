@@ -1,0 +1,95 @@
+/* Google Font Import for Retro Style */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* Pixelated text style */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+/* Monospaced for regular text */
+
+html,
+body {
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  font-family: 'Press Start 2P', cursive;
+  color: #d64d4d;
+
+}
+
+h3 {
+  font-family: "Courier New", monospace;
+  color: #333;
+}
+
+p {
+  font-family: 'Roboto Mono', monospace;
+  color: #3a4660;
+  margin: 20px;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+.small-box {
+  background-color: #f7d9aa;
+  border: 2px solid #d64d4d;
+  width: 150px;
+  height: 100px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  box-shadow: 3px 3px #888888;
+}
+
+#mainFlex {
+  box-sizing: border-box;
+  background-color: #fff0f5;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #d64d4d;
+}
+
+img {
+  max-width: 50px;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  #mainFlex {
+    flex-direction: column;
+  }
+
+  .left-paragraph,
+  .right-paragraph,
+  #canvasContainer {
+    width: 100%;
+    text-align: center;
+    order: 3;
+  }
+
+  #canvasContainer {
+    order: 2;
+  }
+
+  h1 {
+    order: 1;
+  }
+}
+
+#canvasContainer {
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+}
